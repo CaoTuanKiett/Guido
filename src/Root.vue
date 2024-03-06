@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div></div>
+  <div>hehehe</div>
 </template>
 
 <style scoped>

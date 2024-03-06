@@ -12,8 +12,8 @@ const router = createRouter({
       component: () => import("./pages/auth/login.vue"),
     },
     {
-      path: "/register",
-      component: () => import("./pages/auth/register.vue"),
+      path: "/singup",
+      component: () => import("./pages/auth/singup.vue"),
     },
   ],
 });
