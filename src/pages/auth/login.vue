@@ -1,8 +1,17 @@
+<route>
+  {
+   
+    meta: {
+      layout: "auth"
+    }
+  }
+  </route>
+
 <script setup lang="ts">
 </script>
 
 <template>
-  <div></div>
+  <div>login</div>
 </template>
 
 <style scoped>

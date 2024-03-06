@@ -2,7 +2,16 @@
 </script>
 
 <template>
-  <div></div>
+  <header>
+    header
+  </header>
+  <div>
+    <RouterView />
+  </div>
+
+  <footer>
+    footer
+  </footer>
 </template>
 
 <style scoped>

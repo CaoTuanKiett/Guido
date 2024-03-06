@@ -1,21 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
+import routes from "~pages";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [
-    {
-      path: "/",
-      component: () => import("./pages/index.vue"),
-    },
-    {
-      path: "/login",
-      component: () => import("./pages/auth/login.vue"),
-    },
-    {
-      path: "/singup",
-      component: () => import("./pages/auth/singup.vue"),
-    },
-  ],
+  routes,
 });
 
 export default router;
