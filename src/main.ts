@@ -7,5 +7,5 @@ const app = createApp(Root);
 app.use(router);
 
 router.isReady().then(() => {
-  app.mount("#app");
+  app.mount("#root");
 });
