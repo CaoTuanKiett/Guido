@@ -1,29 +1,27 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { useRoute } from "vue-router";
-
-import DefaultLayout from "./layouts/DefaultLayout.vue";
-import AuthLayout from "./layouts/AuthLayout.vue";
-
-const route = useRoute();
-const currentMeta = computed(() => route.meta.layout || "default");
-
-const layoutMap = {
-  default: DefaultLayout,
-  auth: AuthLayout,
-};
-
-const VNodeLayout = computed(() => {
-  layoutMap[currentMeta.value];
-});
 </script>
 
 <template>
-  <Component :is="VNodeLayout">
-    <div>
-      <RouterView />
-    </div>
-  </Component>
+  <router-view v-slot="{ Component, route }">
+    <transition name="slide">
+      <component :is="Component" :key="route">
+        <router-view/>
+      </component>
+    </transition>
+  </router-view>
 </template>
 
-<style scoped></style>
+<style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
+</style>

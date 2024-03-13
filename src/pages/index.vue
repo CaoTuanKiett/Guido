@@ -1,9 +1,8 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <div>Homepage</div>
+    <h1>Hello world</h1>
+    <el-button type="success">Success</el-button>
+    <el-button type="warning">Warning</el-button>
 </template>
 
-<style scoped>
-</style>
+<script setup lang="ts">
+</script>
