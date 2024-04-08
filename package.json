@@ -1,15 +1,17 @@
 {
   "name": "tourgo",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@antfu/eslint-config": "^2.12.1",
     "element-plus": "^2.6.1",
+    "eslint": "^8.57.0",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0"
   },
