@@ -35,7 +35,6 @@ function goToSlide(index) {
 }
 
 function switchLogin() {
-  console.log('switchLogin')
   router.push('/auth/login')
 }
 function switchSignUp() {
@@ -106,35 +105,36 @@ function switchSignUp() {
       padding: 15px;
 
       h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 10px;
       }
 
       p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: #333;
       }
     }
 
     .dots {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
 
-    span {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #ccc;
-      margin: 0 5px;
-      cursor: pointer;
-    }
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin: 0 5px;
+        cursor: pointer;
+      }
 
-    .active {
-      background-color: var(--color-primary);
+      .active {
+        background-color: var(--color-primary);
+      }
     }
-  }
 
   }
 
