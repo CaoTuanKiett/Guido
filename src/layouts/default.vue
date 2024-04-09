@@ -1,15 +1,16 @@
-<script setup lang="ts" >
+<script setup lang="ts">
 
 </script>
+
 <template>
-<header>
+  <header>
     Header
-</header>
-<slot></slot>
+  </header>
+  <slot />
 
-<footer>
+  <footer>
     Footer
-</footer>
-
+  </footer>
 </template>
+
 <style scoped></style>

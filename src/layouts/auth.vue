@@ -1,15 +1,9 @@
-<script setup lang="ts" >
+<script setup lang="ts">
 
 </script>
+
 <template>
-<header>
-    Header Auth
-</header>
-<slot></slot>
-
-<footer>
-    Footer Auth
-</footer>
-
+  <slot />
 </template>
+
 <style scoped></style>
